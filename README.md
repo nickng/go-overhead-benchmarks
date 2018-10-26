@@ -13,3 +13,13 @@ The interface would be used to abstract both a primitive type and a struct.
     BenchmarkIfaceOverheadIfacePrimitive
     BenchmarkIfaceOverheadIfaceStruct
 
+## String construction
+
+Tests which way of string construction is the fastest.
+
+    BenchmarkStringConcat
+    BenchmarkStringSprintf
+    BenchmarkStringByteBuf
+    BenchmarkStringStringBuilder
+
+(Concat < StringBuilder < ByteBuf < Sprintf)
